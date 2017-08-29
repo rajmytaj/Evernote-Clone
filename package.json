@@ -1,0 +1,21 @@
+{
+  "name": "ws-marina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "nodemon": "cd server && npm run start:dev",
+    "dev-server": "cd client && npm start",
+    "install": "cd client && npm install && cd ../server && npm install",
+    "db:migrate": "cd server && npm run knex migrate:latest",
+    "db:rollback": "cd server && npm run knex migrate:rollback",
+    "db:seed": "cd server && npm run knex seed:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.13.0"
+  }
+}
