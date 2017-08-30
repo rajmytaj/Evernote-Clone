@@ -10,7 +10,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.socket = io();
   }
 
   render() {
@@ -23,3 +22,4 @@ class App extends React.Component {
 }
 
 export default App;
+
